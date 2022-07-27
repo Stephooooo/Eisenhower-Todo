@@ -26,7 +26,7 @@ const iconStyles = " w-80 ";
 
     </div>
 
-        <div className=" w-60 fixed left-0 h-full shadow-md bg-todo-grey p-20 py-4 px-1 absolute ">
+        <div className=" w-60 fixed left-0 h-200 shadow-md bg-todo-grey p-20 py-4 px-1 absolute ">
   <ul className="relative">
     <li className="relative">
 
@@ -35,19 +35,19 @@ const iconStyles = " w-80 ";
         <span>Urgent and <br/>  important</span>
       </a>
 
-      <a className="flex items-center text-sm m-10 p-10 py-4 px-6 h-12 overflow-hidden text-todo-black text-ellipsis whitespace-nowrap rounded-full hover:text-todo-white hover:bg-todo-green transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+      <a className="flex items-center text-sm m-10 p-10 py-4 px-6 h-12 overflow-hidden text-todo-black text-ellipsis whitespace-nowrap rounded-full hover:text-todo-white hover:bg-todo-blue transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">
       <AiFillSchedule className={iconStyles} />
       <span> </span>
       <span> </span>
         <span>Less urgent <br/> but important</span>
       </a>
 
-      <a className="flex items-center text-sm m-10 p-10 py-4 px-6 h-12 overflow-hidden text-todo-black text-ellipsis whitespace-nowrap rounded-full hover:text-todo-white hover:bg-todo-green transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+      <a className="flex items-center text-sm m-10 p-10 py-4 px-6 h-12 overflow-hidden text-todo-black text-ellipsis whitespace-nowrap rounded-full hover:text-todo-white hover:bg-todo-orange transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">
       <RiTeamFill className={iconStyles} />
         <span>Urgent but <br/> less important</span>
       </a>
 
-      <a className="flex items-center text-sm m-10 p-10 py-4 px-6 h-12 overflow-hidden text-todo-black text-ellipsis whitespace-nowrap rounded-full hover:text-todo-white hover:bg-todo-green transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+      <a className="flex items-center text-sm m-10 p-10 py-4 px-6 h-12 overflow-hidden text-todo-black text-ellipsis whitespace-nowrap rounded-full hover:text-todo-white hover:bg-todo-red transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">
       <FaThumbsDown className={iconStyles} />
         <span>Neither urgent <br/> nor imortant</span>
       </a>
