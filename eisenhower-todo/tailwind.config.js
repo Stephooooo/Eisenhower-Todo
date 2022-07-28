@@ -10,6 +10,7 @@ module.exports = {
       'todo-white': '#FFFFFF',
       'todo-black': '#000000',
       'todo-grey':'#D9D9D9',
+      'todo-grey1':'#f3f4f6',
     
     },
     extend: {},
