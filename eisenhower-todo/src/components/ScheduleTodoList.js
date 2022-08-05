@@ -44,9 +44,9 @@ function ScheduleTodoList() {
      setTodos(updatedTodos);
    };  return (
     
-    <div className="block p-6 border-4 border-l-[18px]  border-todo-blue rounded-lg shadow-lg bg-todo-grey w-[500px] h-[400px] px-10 mt-[10px] ml-[50px]">
+    <div className="block p-6 border-4 border-l-[18px] border-todo-blue rounded-lg shadow-lg bg-todo-grey w-[1110px] h-[650px] ml-[245px] px-10 mt-[10px]">
     
-        <div className='block ml-10 grid justify-items-start'>
+        <div className='block ml-5 grid justify-items-start'>
             <span className='text-[20px] font-semibold'>Schedule</span>
             <span className='text-[15px] font-bold'>Urgent but less Important</span>
             <div className="text-[15px] font-bold text-todo-blue">Pending tasks ({todosRemaining})</div>
@@ -65,5 +65,6 @@ function ScheduleTodoList() {
     </div>
   )
 }
+
 
 export default ScheduleTodoList
