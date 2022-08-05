@@ -5,7 +5,7 @@ const LogIn = () => {
 
   return (
     <div className='place-items-center m-50 grid justify-items-start mb-11 ml-20'>
-      <span className='text-[30px] font-bold ml-[500px]  mt-2'>Eisenhower Todo</span>
+      <span className='text-[30px] font-bold ml-[500px]  mt-3'>Eisenhower Todo</span>
       <div class="block p-6 rounded-lg shadow-lg bg-todo-grey1   w-[600px] h-[420px] ml-[350px] mt-2">
         <form>
           <div className="form-group mb-6 mr-11 ml-11 ">
