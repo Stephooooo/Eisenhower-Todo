@@ -11,13 +11,15 @@ import ScheduleTodoList from './components/ScheduleTodoList';
 import DelegateTodoList from './components/DelegateTodoList';
 import NotApriorityTodoList from './components/NotApriorityTodoList';
 import Sidebar from './components/common/sidebar'
+import LogIn from './components/common/LogIn';
+import SignUp from './components/common/SignUp';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-        <Sidebar isSignedIn={true} />
+        <Sidebar isNotSignedIn={true} />
 
   <Routes> 
    <Route exact path="/"  element= {<PriorityTodoList/> } />
@@ -25,6 +27,8 @@ root.render(
    <Route exact path= "/Schedule" element= {  <ScheduleTodoList/>} />
    <Route exact path= "/Delegate" element= {<DelegateTodoList/>} />
    <Route exact path= "/NotAPriority" element= { <NotApriorityTodoList/>} />
+   <Route exact path= "/Login" element= {<LogIn/>} />
+   <Route exact path= "/SignUp" element= {<SignUp/>} />
    </Routes>
   </BrowserRouter>
 );

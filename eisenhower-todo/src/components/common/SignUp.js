@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link} from "react-router-dom";
-import Sidebar from './sidebar';
+
 const LogIn = () => {
 
   return (
@@ -25,7 +25,7 @@ const LogIn = () => {
          
          
           <Link className=" bg-transparent hover:bg-todo-blue text-todo-black font-bold hover:text-todo-white w-200px text-sm p-1 h-38px border border-todo-black hover:border-todo-blue rounded-full ml-14 mt-5" href="#!" 
-          to="/"> Log in </Link>
+          to="/"> Sign Up </Link>
         
           </div>
 
