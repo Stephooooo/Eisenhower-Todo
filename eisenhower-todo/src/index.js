@@ -6,18 +6,21 @@ import {
   Route,
 } from "react-router-dom";
 import './index.css';
-import App from './App';
 import PriorityTodoList from './components/PriorityTodoList';
 import ScheduleTodoList from './components/ScheduleTodoList';
 import DelegateTodoList from './components/DelegateTodoList';
 import NotApriorityTodoList from './components/NotApriorityTodoList';
+import Sidebar from './components/common/sidebar'
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+        <Sidebar isSignedIn={true} />
+
   <Routes> 
-   <Route exact path="/" element= { <App /> } />
+   <Route exact path="/"  element= {<PriorityTodoList/> } />
    <Route exact path="/Priority"  element= {<PriorityTodoList/> } />
    <Route exact path= "/Schedule" element= {  <ScheduleTodoList/>} />
    <Route exact path= "/Delegate" element= {<DelegateTodoList/>} />

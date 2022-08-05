@@ -44,7 +44,7 @@ function PriorityTodoList() {
      setTodos(updatedTodos);
    };  return (
     
-    <div className="block p-6 border-4 border-l-[18px]  border-todo-green rounded-lg shadow-lg bg-todo-grey w-[500px] h-[400px] px-10 ml-[50px] mt-[10px]">
+    <div className="block p-6 border-4 border-l-[18px] border-todo-green rounded-lg shadow-lg bg-todo-grey w-[1110px] h-[650px] ml-[245px] px-10 mt-[10px]">
     
         <div className='block ml-5 grid justify-items-start'>
             <span className='text-[20px] font-semibold'>Priority</span>

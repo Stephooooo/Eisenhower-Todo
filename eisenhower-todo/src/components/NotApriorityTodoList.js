@@ -18,7 +18,6 @@ function NotApriorityTodoList() {
 
    useEffect(() => { setTodosRemaining(todos.filter(todo => !todo.completed).length) });
 
-
    const updateTodo = (todoId, newValue) => {
      if (!newValue.text || /^\s*$/.test(newValue.text)) {
        return;
@@ -43,15 +42,12 @@ function NotApriorityTodoList() {
        return todo;
      });
      setTodos(updatedTodos);
-   };  
-   
-   
-   return (
+   };  return (
     
-    <div className="block p-6 border-4 border-l-[18px]  border-todo-red rounded-lg shadow-lg bg-todo-grey w-[500px] h-[400px] px-10 ml-[50px] mt-[1px] ">
+    <div className="block p-6 border-4 border-l-[18px] border-todo-red rounded-lg shadow-lg bg-todo-grey w-[1110px] h-[650px] ml-[245px] px-10 mt-[10px]">
     
-        <div className='block ml-10 grid justify-items-start'>
-            <span className='text-[20x] font-semibold'>Not a Priority</span>
+        <div className='block ml-5 grid justify-items-start'>
+            <span className='text-[20px] font-semibold'>Not a Priority</span>
             <span className='text-[15px] font-bold'>Neither Urgent nor Important</span>
             <div className="text-[15px] font-bold text-todo-red">Pending tasks ({todosRemaining})</div>
             <div>

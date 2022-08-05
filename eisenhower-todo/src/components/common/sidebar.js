@@ -11,7 +11,7 @@ function Sidebar({ isSignedIn, isNotSignedIn }) {
 
   return (
     <>
-      <div className="w-60 shadow-md bg-todo-grey py-2 items-start h-[700px] fixed">
+      <div className="w-60 shadow-md bg-todo-grey py-2 items-start h-[650px] fixed">
         <h2 className="font-bold ml-14 ">
           {" "}
           Eisenhower <br /> Todo{" "}

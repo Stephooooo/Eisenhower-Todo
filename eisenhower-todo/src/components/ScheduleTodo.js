@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import ScheduleForm from './ScheduleForm';
+import PriorityForm from './PriorityForm';
 import {RiCloseCircleLine} from 'react-icons/ri'
 import {TiEdit} from 'react-icons/ti'
 
 
-function ScheduleTodo({todos, completeTodo, removeTodo, updateTodo}) {
+function PriorityTodo({todos, completeTodo, removeTodo, updateTodo}) {
     const [edit, setEdit] = useState({
         id: null,
         value: ''
@@ -19,7 +19,7 @@ function ScheduleTodo({todos, completeTodo, removeTodo, updateTodo}) {
     };
 
     if (edit.id) {
-        return <ScheduleForm edit={edit} onSubmit={submitUpdate} />;
+        return <PriorityForm edit={edit} onSubmit={submitUpdate} />;
     }
 
   return todos.map((todo, index) => (
@@ -28,14 +28,14 @@ function ScheduleTodo({todos, completeTodo, removeTodo, updateTodo}) {
             <div key={todo.id} onClick={() => completeTodo(todo.id)}>{todo.text}
                 {todo.description}
             </div>
-            <div className='flex justify-end  ml-[300px]'>
+            <div className='flex justify-end ml-[826px] fixed'>
                 <RiCloseCircleLine 
                 onClick={() => removeTodo(todo.id)}
-                className='delete-icon'
+                className='delete-icon  stroke-todo-green w-10'
                 />
                 <TiEdit
                 onClick={() => setEdit({ id: todo.id, value: todo.text})}
-                className='edit-icon'
+                className='edit-icon  stroke-todo-green w-10'
                 />
             </div>
         </div>
@@ -43,4 +43,4 @@ function ScheduleTodo({todos, completeTodo, removeTodo, updateTodo}) {
   )) ;
 }
 
-export default ScheduleTodo
+export default PriorityTodo
