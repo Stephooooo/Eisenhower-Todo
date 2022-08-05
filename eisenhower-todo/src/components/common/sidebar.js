@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./button";
-import { Link, BrowserRouter, Routes, Route} from "react-router-dom";
+import { Link} from "react-router-dom";
 import { MdNotificationImportant } from "react-icons/md";
 import { AiFillSchedule } from "react-icons/ai";
 import { RiTeamFill } from "react-icons/ri";
@@ -18,14 +18,12 @@ function Sidebar({ isSignedIn, isNotSignedIn }) {
         </h2>
 
         {isNotSignedIn && (
-          <Button
-            text="Sign up"
-            buttonStyle="Priority"
-            onClick={() => console.log("clicked")}
-          />
+          <Link className=" bg-transparent hover:bg-todo-green text-todo-green font-bold hover:text-todo-white w-200px text-sm p-1 h-38px border border-todo-bla hover:border-transparent rounded-full ml-14 mt-5" href="#!" 
+          to="/Login"> Log in </Link>
+          
         )}
-      
-
+        
+        {/*  */}
        
         <Link className="flex items-center text-sm ml-14 m-10 p-10 py-4 px-6 h-12 overflow-hidden text-todo-black text-ellipsis whitespace-nowrap rounded-full hover:text-todo-white hover:bg-todo-green transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark" to= "/Priority">
          <MdNotificationImportant className={iconStyles} />
